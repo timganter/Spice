@@ -23,7 +23,7 @@
             "Spice\\": ""
         },
         "files": [
-            "src/helpers.php"
+            "helpers.php"
         ]
     },
     "extra": {
