@@ -9,7 +9,7 @@ if (! function_exists('spiceString')) {
      * @param  mixed $value
      * @return \Spice\Str
      */
-    public function spiceString($value = null)
+    function spiceString($value = null)
     {
         return new Str($value);
     }
