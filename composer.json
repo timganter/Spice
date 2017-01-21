@@ -1,16 +1,18 @@
 {
-    "name": "timganter/spice",
-    "description": "Some helpers for php.",
+    "name": "timganter/Spice",
+    "description": "Some helpers.",
     "license": "MIT",
-    "homepage": "https://timganter.io",
+    "homepage": "https://github.com/timganter/Spice",
     "support": {
-        "issues": "https://github.com/timganter/spice/issues",
-        "source": "https://github.com/timganter/spice"
+        "issues": "https://github.com/timganter/Spice/issues",
+        "source": "https://github.com/timganter/Spice"
     },
     "authors": [
         {
             "name": "Tim Ganter",
-            "email": "tim@studiotenfour.com"
+            "email": "tim@studiotenfour.com",
+            "homepage": "https://github.com/timganter",
+            "role": "Developer"
         }
     ],
     "require": {
@@ -18,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Spice\\": ""
+            "Spice\\": "src/"
         }
     },
     "extra": {
