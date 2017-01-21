@@ -1,0 +1,30 @@
+{
+    "name": "timganter/spice",
+    "description": "Some helpers for php.",
+    "license": "MIT",
+    "homepage": "https://timganter.io",
+    "support": {
+        "issues": "https://github.com/timganter/spice/issues",
+        "source": "https://github.com/timganter/spice"
+    },
+    "authors": [
+        {
+            "name": "Tim Ganter",
+            "email": "tim@studiotenfour.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spice": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev"
+}
