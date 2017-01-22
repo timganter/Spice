@@ -7,8 +7,8 @@ if (! function_exists('spice')) {
      * @param  mixed $value
      * @return \Spice\Str
      */
-    function spice($value = null)
+    function spice()
     {
-        return new Spice\Spice($value);
+        return new Spice\Spice;
     }
 }
