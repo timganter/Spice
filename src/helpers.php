@@ -22,7 +22,7 @@ if (! function_exists('capitalizeWordsExcept')) {
         $words = explode($delimiter, $value);
 
         foreach($words as $key=>$word) {
-            if (! in_array($word, $except)) {
+            if (! in_array($word, $except) && ctype_alpha(substr($word, 0))) {
                 $words[$key] = mb_convert_case($word, MB_CASE_TITLE, 'UTF-8');
             }
         }
