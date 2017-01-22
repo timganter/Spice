@@ -7,7 +7,7 @@ if (! function_exists('capitalizeWordsExcept')) {
      * @param  string $value
      * @return string
      */
-    public function capitalize($value)
+    function capitalize($value)
     {
         return ucfirst(mb_strtolower($value));
     }
