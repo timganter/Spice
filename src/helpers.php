@@ -11,6 +11,10 @@ if (! function_exists('capitalizeWordsExcept')) {
      */
     function capitalizeWordsExcept($value, $except, $delimiter = ' ')
     {
+        // == Lowercase all string characters first
+        $value = mb_strtolower($value);
+        
+        // == Put exceptions in an array
         if (is_string($except)) {
             $except = [$except];
         }
