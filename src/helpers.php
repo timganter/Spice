@@ -43,6 +43,14 @@ if (! function_exists('capitalizeWordsExcept')) {
 }
 
 if (! function_exists('upperOnlyTheseWords')) {
+    /**
+     * Convert certain words in a string to UPPERCASE.
+     * 
+     * @param  string $value
+     * @param  mixed|string|array $only
+     * @param  string $delimiter
+     * @return string
+     */
     function upperOnlyTheseWords($value, $only, $delimiter = ' ')
     {
         // == Put only in an array
