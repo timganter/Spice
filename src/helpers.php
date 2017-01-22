@@ -1,16 +1,16 @@
 <?php
 
-use Spice\Str;
+use Spice;
 
-if (! function_exists('spiceString')) {
+if (! function_exists('spice')) {
     /**
      * Create a spice object.
      * 
      * @param  mixed $value
      * @return \Spice\Str
      */
-    function spiceString($value = null)
+    function spice($value = null)
     {
-        return new Str($value);
+        return new Spice($value);
     }
 }
