@@ -1,7 +1,5 @@
 <?php
 
-use Spice;
-
 if (! function_exists('spice')) {
     /**
      * Create a spice object.
