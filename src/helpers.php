@@ -2,6 +2,17 @@
 
 if (! function_exists('capitalizeWordsExcept')) {
     /**
+     * Lowercase a string then capitalize it.
+     * 
+     * @param  string $value
+     * @return string
+     */
+    public function capitalize($value)
+    {
+        return ucfirst(mb_strtolower($value));
+    }
+
+    /**
      * Capitalize a string of words except certain ones.
      * 
      * @param  string $value
