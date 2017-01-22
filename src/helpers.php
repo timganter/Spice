@@ -1,14 +1,28 @@
 <?php
 
-if (! function_exists('spice')) {
+if (! function_exists('capitalizeWordsExcept')) {
     /**
-     * Create a spice object.
+     * Capitalize a string of words except certain ones.
      * 
-     * @param  mixed $value
-     * @return \Spice\Str
+     * @param  string $value
+     * @param  mixed|string|array $except
+     * @param  string $delimiter
+     * @return string
      */
-    function spice()
+    function capitalizeWordsExcept($value, $except, $delimiter = ' ')
     {
-        return new Spice\Spice;
+        if (is_string($except)) {
+            $except = [$except];
+        }
+
+        $words = explode($delimiter, $value);
+
+        foreach($words as $key=>$word) {
+            if (! in_array($word, $except)) {
+                $words[$key] = mb_convert_case($word, MB_CASE_TITLE, 'UTF-8');
+            }
+        }
+
+        return implode(' ', $words);
     }
 }
