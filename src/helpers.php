@@ -9,6 +9,6 @@ if (! function_exists('spice')) {
      */
     function spice($value = null)
     {
-        return new Spice($value);
+        return new Spice\Spice($value);
     }
 }
