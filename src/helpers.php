@@ -30,3 +30,23 @@ if (! function_exists('capitalizeWordsExcept')) {
         return implode(' ', $words);
     }
 }
+
+if (! function_exists('upperOnlyTheseWords')) {
+    function upperOnlyTheseWords($value, $only, $delimiter = ' ')
+    {
+        // == Put only in an array
+        if (is_string($only)) {
+            $only = [$only];
+        }
+
+        $words = explode($delimiter, $value);
+
+        foreach($words as $key=>$word) {
+            if (in_array($word, $only) && ctype_alpha(substr($word, 0))) {
+                $words[$key] = mb_strtoupper($word, 'UTF-8');
+            }
+        }
+
+        return implode(' ', $words);
+    }
+}
