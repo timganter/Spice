@@ -5,8 +5,8 @@ namespace Spice;
 class Str {
     protected $string = '';
 
-    public function __construct($string = null) {
-        $this->string = $this->checkString($value) ? $string : '';
+    public function __construct($value = null) {
+        $this->string = $this->checkString($value) ? $value : '';
     }
 
     /**
