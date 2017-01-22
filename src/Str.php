@@ -65,8 +65,6 @@ class Str {
             );
         }
 
-        throw new InvalidArgumentException(
-            'Passed argument must be a string.'
-        );
+        return false;
     }
 }
